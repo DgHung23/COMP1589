@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GreenWish | Events</title>
+
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/common.css" />
+        <link rel="stylesheet" href="./assets/css/events.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="./index.html">
+                        <div class="logo">
+                            <img
+                                src="./assets/icons/logo-white.png"
+                                alt="GreenWish logo"
+                                class="logo__circle"
+                            />
+                            <span class="logo__text">
+                                <span class="logo__brand">Green</span>
+                                <span class="logo__brand logo__brand--small">
+                                    Wish
+                                </span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="./about.html" class="navbar__link"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    href="./activities.html"
+                                    class="navbar__link"
+                                    >What We Do</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="./events.html" class="navbar__link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    href="./contact.html"
+                                    class="navbar__link"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-action">
+                        <a href="./contact.html#donation" class="btn header-action__signup">
+                            Donate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Intro -->
+            <section class="event-intro">
+                <div class="container">
+                    <div class="event-intro__inner">
+                        <div class="event-intro__content">
+                            <h2 class="section-heading">
+                                About GreenWish events
+                            </h2>
+                            <p class="section-desc event-intro__desc">
+                                GreenWish events are designed to help save the
+                                environment through real community action. We
+                                organize clean-up campaigns, planting days, and
+                                awareness activities that encourage people to
+                                protect local green spaces and build sustainable
+                                habits together.
+                            </p>
+                        </div>
+
+                        <div class="event-intro__stats">
+                            <div class="event-intro__stat">
+                                <strong class="event-intro__number">20+</strong>
+                                <span class="event-intro__label"
+                                    >community actions planned</span
+                                >
+                            </div>
+                            <div class="event-intro__stat">
+                                <strong class="event-intro__number"
+                                    >500+</strong
+                                >
+                                <span class="event-intro__label"
+                                    >expected volunteers</span
+                                >
+                            </div>
+                            <div class="event-intro__stat">
+                                <strong class="event-intro__number"
+                                    >100%</strong
+                                >
+                                <span class="event-intro__label"
+                                    >focused on environmental impact</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <script src="./assets/js/increase_stats.js"></script>
+                </div>
+            </section>
+
+            <!-- Upcoming events -->
+            <section class="event-list" id="event-list">
+                <div class="container">
+                    <div class="event-list__top">
+                        <div>
+                            <h2 class="section-heading">Upcoming events</h2>
+                            <p class="section-desc event-list__desc">
+                                Discover the next GreenWish activities and
+                                choose how you want to contribute.
+                            </p>
+                        </div>
+
+                        <div class="event-list__tags">
+                            <span class="event-list__tag">Cleanup</span>
+                            <span class="event-list__tag">Tree Planting</span>
+                            <span class="event-list__tag">Workshop</span>
+                            <span class="event-list__tag">Fundraising</span>
+                        </div>
+                    </div>
+
+                    <div class="event-list__grid">
+                        <article class="event-card event-card">
+                            <span class="event-card__badge">Featured</span>
+                            <h3 class="event-card__title">
+                                Green Street Cleanup Day
+                            </h3>
+
+                            <div class="event-card__meta">
+                                <span class="event-card__meta-item"
+                                    >12 May 2026</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >Ben Tre</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >08:00 AM</span
+                                >
+                            </div>
+
+                            <p class="event-card__desc">
+                                Join local volunteers to collect waste, separate
+                                recyclables, and help restore cleaner public
+                                spaces.
+                            </p>
+
+                            <div class="event-card__tags">
+                                <span class="event-card__tag">Cleanup</span>
+                                <span class="event-card__tag">Volunteer</span>
+                                <span class="event-card__tag">Outdoor</span>
+                            </div>
+
+                            <a href="#!" class="event-card__link"
+                                >Join this event</a
+                            >
+                        </article>
+
+                        <article class="event-card">
+                            <span class="event-card__badge">Open</span>
+                            <h3 class="event-card__title">
+                                Trees for Tomorrow
+                            </h3>
+
+                            <div class="event-card__meta">
+                                <span class="event-card__meta-item"
+                                    >20 May 2026</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >Community Park</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >09:30 AM</span
+                                >
+                            </div>
+
+                            <p class="event-card__desc">
+                                Help plant native trees and learn how local
+                                ecosystems recover when communities work
+                                together.
+                            </p>
+
+                            <div class="event-card__tags">
+                                <span class="event-card__tag"
+                                    >Tree Planting</span
+                                >
+                                <span class="event-card__tag">Nature</span>
+                                <span class="event-card__tag"
+                                    >Family Friendly</span
+                                >
+                            </div>
+
+                            <a href="#!" class="event-card__link"
+                                >Save your spot</a
+                            >
+                        </article>
+
+                        <article class="event-card">
+                            <span class="event-card__badge">Soon</span>
+                            <h3 class="event-card__title">
+                                Eco Habit Workshop
+                            </h3>
+
+                            <div class="event-card__meta">
+                                <span class="event-card__meta-item"
+                                    >28 May 2026</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >GreenWish Hub</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >02:00 PM</span
+                                >
+                            </div>
+
+                            <p class="event-card__desc">
+                                A practical session about reducing waste,
+                                reusing materials, and building greener routines
+                                at home.
+                            </p>
+
+                            <div class="event-card__tags">
+                                <span class="event-card__tag">Workshop</span>
+                                <span class="event-card__tag">Education</span>
+                                <span class="event-card__tag">Community</span>
+                            </div>
+
+                            <a href="#!" class="event-card__link">Learn more</a>
+                        </article>
+
+                        <article class="event-card">
+                            <span class="event-card__badge">Charity</span>
+                            <h3 class="event-card__title">
+                                River Recovery Fundraiser
+                            </h3>
+
+                            <div class="event-card__meta">
+                                <span class="event-card__meta-item"
+                                    >05 June 2026</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >Online + Offline</span
+                                >
+                                <span class="event-card__meta-item"
+                                    >06:30 PM</span
+                                >
+                            </div>
+
+                            <p class="event-card__desc">
+                                Support environmental recovery projects while
+                                helping fund equipment, seedlings, and local
+                                awareness programs.
+                            </p>
+
+                            <div class="event-card__tags">
+                                <span class="event-card__tag">Fundraising</span>
+                                <span class="event-card__tag">Charity</span>
+                                <span class="event-card__tag">Impact</span>
+                            </div>
+
+                            <a href="#!" class="event-card__link"
+                                >Support now</a
+                            >
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game placeholder -->
+            <section class="game-charity" id="game-charity">
+                <div class="container">
+                    <div class="game-charity__top">
+                        <h2 class="section-heading">Play a game for charity</h2>
+                        <p class="section-desc game-charity__desc">
+                            Help the turtle survive in polluted water. Every
+                            full minute survived adds <strong>£1</strong> to the
+                            charity total.
+                        </p>
+                    </div>
+
+                    <div class="charity-game">
+                        <div class="charity-game__hud" id="charityGameHud">
+                            <div class="charity-game__stat">
+                                <span class="charity-game__stat-label"
+                                    >Time left</span
+                                >
+                                <strong
+                                    class="charity-game__stat-value"
+                                    id="charityGameCountdown"
+                                >
+                                    05:00
+                                </strong>
+                            </div>
+
+                            <div class="charity-game__stat">
+                                <span class="charity-game__stat-label"
+                                    >Time survived</span
+                                >
+                                <strong
+                                    class="charity-game__stat-value"
+                                    id="charityGameSurvived"
+                                >
+                                    00:00
+                                </strong>
+                            </div>
+
+                            <div class="charity-game__stat">
+                                <span class="charity-game__stat-label"
+                                    >Charity pledge</span
+                                >
+                                <strong
+                                    class="charity-game__stat-value"
+                                    id="charityGamePounds"
+                                >
+                                    £0
+                                </strong>
+                            </div>
+                        </div>
+
+                        <div class="charity-game__stage">
+                            <canvas
+                                id="charityGameCanvas"
+                                class="charity-game__canvas"
+                                width="1100"
+                                height="520"
+                            ></canvas>
+
+                            <div
+                                class="charity-game__overlay"
+                                id="charityGameStart"
+                            >
+                                <div class="charity-game__panel">
+                                    <span class="charity-game__badge"
+                                        >Charity Challenge</span
+                                    >
+                                    <h3 class="charity-game__panel-title">
+                                        Save the turtle from sea garbage
+                                    </h3>
+                                    <p class="charity-game__panel-desc">
+                                        Move with <strong>Arrow keys</strong> or
+                                        <strong>WASD</strong>. Survive as long
+                                        as possible. If the turtle hits garbage,
+                                        the run ends. Reach the full 5 minutes
+                                        to generate the maximum
+                                        <strong>£5</strong> per user.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        class="btn charity-game__start-btn"
+                                        id="charityGameStartBtn"
+                                    >
+                                        Start game
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div
+                                class="charity-game__result"
+                                id="charityGameResult"
+                                hidden
+                            >
+                                <div
+                                    class="charity-game__panel charity-game__panel--result"
+                                >
+                                    <span
+                                        class="charity-game__badge"
+                                        id="charityGameResultBadge"
+                                    >
+                                        Run complete
+                                    </span>
+
+                                    <h3
+                                        class="charity-game__panel-title"
+                                        id="charityGameResultTitle"
+                                    >
+                                        Great effort!
+                                    </h3>
+
+                                    <p
+                                        class="charity-game__panel-desc"
+                                        id="charityGameResultText"
+                                    >
+                                        You kept the turtle safe and generated
+                                        support for charity.
+                                    </p>
+
+                                    <div class="charity-game__result-grid">
+                                        <div class="charity-game__result-item">
+                                            <span
+                                                class="charity-game__result-label"
+                                            >
+                                                Time survived
+                                            </span>
+                                            <strong
+                                                class="charity-game__result-value"
+                                                id="charityGameResultTime"
+                                            >
+                                                00:00
+                                            </strong>
+                                        </div>
+
+                                        <div class="charity-game__result-item">
+                                            <span
+                                                class="charity-game__result-label"
+                                            >
+                                                Charity pledge
+                                            </span>
+                                            <strong
+                                                class="charity-game__result-value"
+                                                id="charityGameResultPounds"
+                                            >
+                                                £0
+                                            </strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="charity-game__actions">
+                                        <button
+                                            type="button"
+                                            class="btn"
+                                            id="charityGameRestartBtn"
+                                        >
+                                            Play again
+                                        </button>
+
+                                        <a
+                                            href="#"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="btn charity-game__invite-link"
+                                            id="charityGameInvite"
+                                        >
+                                            Invite a friend to play
+                                        </a>
+
+                                        <button
+                                            type="button"
+                                            class="charity-game__secondary-btn"
+                                            id="charityGameCopyBtn"
+                                        >
+                                            Copy challenge link
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="./assets/js/charity_game.js" defer></script>
+            </section>
+
+            <!-- CTA -->
+            <section class="event-cta">
+                <div class="container">
+                    <div class="event-cta__inner">
+                        <div class="event-cta__content">
+                            <h2 class="event-cta__heading">
+                                Be part of the GreenWish recovery community.
+                            </h2>
+                            <p class="event-cta__desc">
+                                Volunteer, donate, or share the next event with
+                                your friends and help create a greener tomorrow.
+                            </p>
+                        </div>
+                        <div class="event-cta__actions">
+                            <a href="#!" class="btn">Volunteer now</a>
+                            <a href="#!" class="event-cta__link"
+                                >Contact GreenWish</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <!-- Logo -->
+                        <a href="/">
+                        <div class="logo">
+                            <img src="./assets/icons/logo-white.png" class="logo__circle"></img>
+                            <span class="logo__text">
+                                <span class="logo__brand">Green</span>
+                                <span class="logo__brand logo__brand--small">
+                                    Wish
+                                </span>
+                            </span>
+                        </div>
+                    </a>
+                        <p class="footer__desc">
+                            GreenWish is a recovery environment community that
+                            connects people, ideas, and local action to build a
+                            cleaner and healthier future.
+                        
+                        </p>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__heading">Explore</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="./about.html" class="footer__link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="./activities.html" class="footer__link">
+                                    Our activities
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="./events.html" class="footer__link">
+                                    Upcoming Events
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="./contact.html" class="footer__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h3 class="footer__heading">Help us</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Parner with us
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="./contact.html#donation" class="footer__link">
+                                    Donate
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                    <h3 class="footer__heading">Quick Links</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="./about.html#team" class="footer__link">
+                                    Meet the team
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="./events.html#charityGameHud" class="footer__link">
+                                    Play charity games
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h3 class="footer__heading">Support</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Help center
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__heading">Stay In Touch</h3>
+                        <div class="footer__social">
+                            <a href="#!" class="footer__social-btn">
+                                <svg
+                                    width="6"
+                                    height="12"
+                                    viewBox="0 0 6 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3.98981 11.9358V6.0302H5.76473L6 3.9517H3.98981L3.9928 2.91132C3.9928 2.3692 4.0477 2.07885 4.87783 2.07885H5.98755V0H4.21224C2.07977 0 1.32931 1.00825 1.32931 2.70405V3.95186H0V6.03055H1.32931V11.8521C1.84718 11.9489 2.38257 12 2.93075 12C3.28487 12 3.63863 11.9786 3.98981 11.9358Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer__social-btn">
+                                <svg
+                                    width="16"
+                                    height="12"
+                                    viewBox="0 0 16 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16 1.42062C15.405 1.66154 14.771 1.82123 14.11 1.89877C14.79 1.524 15.309 0.935077 15.553 0.225231C14.919 0.574154 14.219 0.820615 13.473 0.958154C12.871 0.366462 12.013 0 11.077 0C9.261 0 7.799 1.36062 7.799 3.02862C7.799 3.26862 7.821 3.49938 7.875 3.71908C5.148 3.59631 2.735 2.38985 1.114 0.552C0.831 1.00523 0.665 1.524 0.665 2.08246C0.665 3.13108 1.25 4.06062 2.122 4.59877C1.595 4.58954 1.078 4.44831 0.64 4.22585C0.64 4.23508 0.64 4.24708 0.64 4.25908C0.64 5.73046 1.777 6.95262 3.268 7.23415C3.001 7.30154 2.71 7.33385 2.408 7.33385C2.198 7.33385 1.986 7.32277 1.787 7.28215C2.212 8.48123 3.418 9.36277 4.852 9.39138C3.736 10.1972 2.319 10.6828 0.785 10.6828C0.516 10.6828 0.258 10.6717 0 10.6412C1.453 11.5062 3.175 12 5.032 12C11.068 12 14.368 7.38462 14.368 3.384C14.368 3.25015 14.363 3.12092 14.356 2.99262C15.007 2.56615 15.554 2.03354 16 1.42062Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer__social-btn">
+                                <svg
+                                    width="13"
+                                    height="12"
+                                    viewBox="0 0 13 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0 1.39394C0 0.989891 0.146401 0.656558 0.439189 0.393939C0.731978 0.131309 1.11262 0 1.58108 0C2.04119 0 2.41344 0.129285 2.69788 0.387879C2.99066 0.654545 3.13707 1.00201 3.13707 1.4303C3.13707 1.81818 2.99486 2.14141 2.71042 2.4C2.41764 2.66667 2.03282 2.8 1.55598 2.8H1.54344C1.08333 2.8 0.711072 2.66667 0.426641 2.4C0.142209 2.13333 0 1.79798 0 1.39394ZM0.163127 12V3.90303H2.94884V12H0.163127ZM4.49228 12H7.27799V7.47879C7.27799 7.19595 7.31146 6.97777 7.37838 6.82424C7.49549 6.54949 7.67326 6.31716 7.91168 6.12727C8.1501 5.93737 8.44916 5.84242 8.80888 5.84242C9.74582 5.84242 10.2143 6.45252 10.2143 7.67273V12H13V7.35758C13 6.16161 12.7072 5.25455 12.1216 4.63636C11.536 4.01818 10.7622 3.70909 9.80019 3.70909C8.72104 3.70909 7.88031 4.15758 7.27799 5.05455V5.07879H7.26544L7.27799 5.05455V3.90303H4.49228C4.509 4.16161 4.51737 4.96565 4.51737 6.31515C4.51737 7.66464 4.509 9.55959 4.49228 12Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <h3 class="footer__heading">Subscribe</h3>
+
+                        <p class="footer__desc">
+                            Subscribe to get GreenWish updates, volunteer news,
+                            and community recovery stories.
+                        
+                        </p>
+
+                        <form class="footer-form" action="">
+                            <input
+                                class="footer-form__input"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email..."
+                            />
+                            <button
+                                class="btn footer-form__submit"
+                                type="submit"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">
+                        2026 GDN. Copyright and All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

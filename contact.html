@@ -44,7 +44,7 @@
                                 >
                             </li>
                             <li class="navbar__item">
-                                <a href="./contact.html" class="navbar__link">Contact Us</a>
+                                <a href="./contact.html" class="navbar__link navbar__link--active">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
@@ -466,6 +466,7 @@
                                 name="email"
                                 id="email"
                                 placeholder="Enter your email..."
+                                required
                             />
                             <button
                                 class="btn footer-form__submit"
@@ -474,6 +475,19 @@
                                 Subscribe
                             </button>
                         </form>
+
+                                            <div class="subscribe-popup" id="subscribePopup">
+                        <div class="subscribe-popup__overlay"></div>
+                        <div class="subscribe-popup__box">
+                            <h3 class="subscribe-popup__title">Thank you 🌿</h3>
+                            <p class="subscribe-popup__text">
+                                We will inform you about the next GreenWish event.
+                            </p>
+                            <button class="subscribe-popup__btn" id="closePopup">Close</button>
+                        </div>
+                    </div>
+
+                    <script src="./assets/js/popup.js"></script>
                     </div>
                 </div>
 

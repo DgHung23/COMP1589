@@ -5,10 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>GreenWish | What We Do</title>
 
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- fonts -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- common css -->
         <link rel="stylesheet" href="./assets/css/common.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- style sheet -->
+        <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+        <!-- activities css -->
         <link rel="stylesheet" href="./assets/css/activities.css" />
     </head>
     <body>
@@ -71,18 +95,18 @@
         </header>
 
         <main>
-            <section class="hero activities-hero">
+            <section class="activities-hero">
                 <div class="container">
-                    <div class="hero--flex activities-hero__layout">
-                        <section class="hero__content activities-hero__content">
-                            <p class="activities-hero__eyebrow">What We Do</p>
-                            <p class="hero__desc activities-hero__desc">
+                    <div class="activities-hero__layout">
+                        <section class="activities-hero__content">
+                            <p class="activities-hero__eyebrow">What We Do ?</p>
+                            <p class="activities-hero__desc">
                                 GreenWish helps the environment through clean-up
                                 drives, tree recovery, recycling education, and
                                 neighborhood action that makes visible change in
                                 streets, parks, school zones, and waterways.
                             </p>
-                            <div class="hero__row activities-hero__row">
+                            <div class="activities-hero__row">
                                 <a href="#impact" class="btn hero__btn"
                                     >See Our Impact</a
                                 >
@@ -121,9 +145,7 @@
                                     alt="Healthy green space restored by community action"
                                     class="activities-hero__image activities-hero__image--small"
                                 />
-                            </figure>
-
-                            <div class="activities-hero__badge">
+                                <div class="activities-hero__badge">
                                 <strong class="activities-hero__badge-number"
                                     >42%</strong
                                 >
@@ -132,6 +154,9 @@
                                     GreenWish activity cycles
                                 </span>
                             </div>
+                            </figure>
+
+                            
                         </div>
                     </div>
                 </div>
@@ -234,12 +259,6 @@
                                         >bags per week after 6 months</span
                                     >
                                 </div>
-                                <div class="impact__stat">
-                                    <strong class="impact__number">4</strong>
-                                    <span class="impact__label"
-                                        >high-activity zones tracked</span
-                                    >
-                                </div>
                             </div>
                         </div>
 
@@ -250,78 +269,19 @@
                             data-impact-values="78,67,59,49,39,31"
                             data-impact-unit="bags per week"
                         >
-                            <div class="impact-chart__topbar">
-                                <div class="impact-chart__legend">
-                                    <span
-                                        class="impact-chart__legend-dot"
-                                    ></span>
-                                    <span class="impact-chart__legend-text">
-                                        Average garbage bags collected each week
-                                    </span>
-                                </div>
-
-                                <div class="impact-chart__callout">
-                                    <span class="impact-chart__callout-label">
-                                        Since January
-                                    </span>
-                                    <strong class="impact-chart__callout-value">
-                                        -60%
-                                    </strong>
-                                    <span class="impact-chart__callout-text">
-                                        less garbage in active zones
-                                    </span>
-                                </div>
-                            </div>
-
                             <div class="impact-chart__stage">
-                                <svg
-                                    class="impact-chart__svg"
-                                    viewBox="0 0 560 340"
+                                <canvas
+                                    class="impact-chart__canvas"
+                                    width="560"
+                                    height="340"
                                     role="img"
-                                    aria-labelledby="impactChartTitle impactChartDesc"
-                                    data-impact-svg
+                                    aria-label="Garbage reduction in active GreenWish areas. The chart falls from 78 bags per week in January to 31 in June."
+                                    data-impact-canvas
                                 >
-                                    <title id="impactChartTitle">
-                                        Garbage reduction in active GreenWish
-                                        areas
-                                    </title>
-                                    <desc id="impactChartDesc">
-                                        The line drops from 78 bags in January
-                                        to 31 bags in June, showing steady waste
-                                        reduction.
-                                    </desc>
-                                </svg>
-
-                                <div
-                                    class="impact-chart__tooltip"
-                                    data-impact-tooltip
-                                >
-                                    <span
-                                        class="impact-chart__tooltip-month"
-                                        data-impact-tooltip-month
-                                    ></span>
-                                    <strong
-                                        class="impact-chart__tooltip-value"
-                                        data-impact-tooltip-value
-                                    ></strong>
-                                    <span
-                                        class="impact-chart__tooltip-trend"
-                                        data-impact-tooltip-trend
-                                    ></span>
-                                </div>
-                            </div>
-
-                            <div class="impact-chart__summary">
-                                <div class="impact-chart__summary-item">
-                                    <strong>47 bags</strong>
-                                    <span
-                                        >less garbage collected each week</span
-                                    >
-                                </div>
-                                <div class="impact-chart__summary-item">
-                                    <strong>6 months</strong>
-                                    <span>of repeated community activity</span>
-                                </div>
+                                    Garbage reduction chart from January to
+                                    June, dropping from 78 bags per week to 31
+                                    bags per week.
+                                </canvas>
                             </div>
                         </div>
                     </div>
@@ -372,86 +332,145 @@
             </section>
         </main>
 
-        <footer class="footer" id="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="footer__row">
                     <div class="footer__column">
-                        <a href="./index.html">
-                            <div class="logo">
-                                <img
-                                    src="./assets/icons/logo-white.png"
-                                    alt="GreenWish logo"
-                                    class="logo__circle"
-                                />
-                                <span class="logo__text">
-                                    <span class="logo__brand">Green</span>
-                                    <span class="logo__brand logo__brand--small"
-                                        >Wish</span
-                                    >
+                        <!-- Logo -->
+                        <a href="/">
+                        <div class="logo">
+                            <img src="./assets/icons/logo-white.png" class="logo__circle"></img>
+                            <span class="logo__text">
+                                <span class="logo__brand">Green</span>
+                                <span class="logo__brand logo__brand--small">
+                                    Wish
                                 </span>
-                            </div>
-                        </a>
+                            </span>
+                        </div>
+                    </a>
                         <p class="footer__desc">
-                            GreenWish is a recovery-focused community building
-                            cleaner spaces, stronger habits, and greener local
-                            futures.
+                            GreenWish is a recovery environment community that
+                            connects people, ideas, and local action to build a
+                            cleaner and healthier future.
+                        
                         </p>
                     </div>
-
                     <div class="footer__column">
                         <h3 class="footer__heading">Explore</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="./about.html" class="footer__link"
-                                    >About Us</a
-                                >
+                                <a href="./about.html" class="footer__link">
+                                    About us
+                                </a>
                             </li>
                             <li class="footer__item">
-                                <a href="./activities.html" class="footer__link"
-                                    >What We Do</a
-                                >
+                                <a href="./activities.html" class="footer__link">
+                                    Our activities
+                                </a>
                             </li>
                             <li class="footer__item">
-                                <a href="./events.html" class="footer__link"
-                                    >Events</a
-                                >
+                                <a href="./events.html" class="footer__link">
+                                    Upcoming Events
+                                </a>
                             </li>
                             <li class="footer__item">
-                                <a href="./contact.html" class="footer__link"
-                                    >Contact Us</a
-                                >
+                                <a href="./contact.html" class="footer__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h3 class="footer__heading">Help us</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Parner with us
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="./contact.html#donation" class="footer__link">
+                                    Donate
+                                </a>
                             </li>
                         </ul>
                     </div>
-
                     <div class="footer__column">
+                    <h3 class="footer__heading">Quick Links</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="./about.html#team" class="footer__link">
+                                    Meet the team
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="./events.html#charityGameHud" class="footer__link">
+                                    Play charity games
+                                </a>
+                            </li>
+                        </ul>
+
                         <h3 class="footer__heading">Support</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="./events.html" class="footer__link"
-                                    >Volunteer</a
-                                >
-                            </li>
-                            <li class="footer__item">
-                                <a
-                                    href="./contact.html#donation"
-                                    class="footer__link"
-                                    >Donate</a
-                                >
-                            </li>
-                            <li class="footer__item">
-                                <a href="./contact.html" class="footer__link"
-                                    >Partner with us</a
-                                >
+                                <a href="#!" class="footer__link">
+                                    Help center
+                                </a>
                             </li>
                         </ul>
                     </div>
-
                     <div class="footer__column">
+                        <h3 class="footer__heading">Stay In Touch</h3>
+                        <div class="footer__social">
+                            <a href="#!" class="footer__social-btn">
+                                <svg
+                                    width="6"
+                                    height="12"
+                                    viewBox="0 0 6 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3.98981 11.9358V6.0302H5.76473L6 3.9517H3.98981L3.9928 2.91132C3.9928 2.3692 4.0477 2.07885 4.87783 2.07885H5.98755V0H4.21224C2.07977 0 1.32931 1.00825 1.32931 2.70405V3.95186H0V6.03055H1.32931V11.8521C1.84718 11.9489 2.38257 12 2.93075 12C3.28487 12 3.63863 11.9786 3.98981 11.9358Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer__social-btn">
+                                <svg
+                                    width="16"
+                                    height="12"
+                                    viewBox="0 0 16 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16 1.42062C15.405 1.66154 14.771 1.82123 14.11 1.89877C14.79 1.524 15.309 0.935077 15.553 0.225231C14.919 0.574154 14.219 0.820615 13.473 0.958154C12.871 0.366462 12.013 0 11.077 0C9.261 0 7.799 1.36062 7.799 3.02862C7.799 3.26862 7.821 3.49938 7.875 3.71908C5.148 3.59631 2.735 2.38985 1.114 0.552C0.831 1.00523 0.665 1.524 0.665 2.08246C0.665 3.13108 1.25 4.06062 2.122 4.59877C1.595 4.58954 1.078 4.44831 0.64 4.22585C0.64 4.23508 0.64 4.24708 0.64 4.25908C0.64 5.73046 1.777 6.95262 3.268 7.23415C3.001 7.30154 2.71 7.33385 2.408 7.33385C2.198 7.33385 1.986 7.32277 1.787 7.28215C2.212 8.48123 3.418 9.36277 4.852 9.39138C3.736 10.1972 2.319 10.6828 0.785 10.6828C0.516 10.6828 0.258 10.6717 0 10.6412C1.453 11.5062 3.175 12 5.032 12C11.068 12 14.368 7.38462 14.368 3.384C14.368 3.25015 14.363 3.12092 14.356 2.99262C15.007 2.56615 15.554 2.03354 16 1.42062Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer__social-btn">
+                                <svg
+                                    width="13"
+                                    height="12"
+                                    viewBox="0 0 13 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0 1.39394C0 0.989891 0.146401 0.656558 0.439189 0.393939C0.731978 0.131309 1.11262 0 1.58108 0C2.04119 0 2.41344 0.129285 2.69788 0.387879C2.99066 0.654545 3.13707 1.00201 3.13707 1.4303C3.13707 1.81818 2.99486 2.14141 2.71042 2.4C2.41764 2.66667 2.03282 2.8 1.55598 2.8H1.54344C1.08333 2.8 0.711072 2.66667 0.426641 2.4C0.142209 2.13333 0 1.79798 0 1.39394ZM0.163127 12V3.90303H2.94884V12H0.163127ZM4.49228 12H7.27799V7.47879C7.27799 7.19595 7.31146 6.97777 7.37838 6.82424C7.49549 6.54949 7.67326 6.31716 7.91168 6.12727C8.1501 5.93737 8.44916 5.84242 8.80888 5.84242C9.74582 5.84242 10.2143 6.45252 10.2143 7.67273V12H13V7.35758C13 6.16161 12.7072 5.25455 12.1216 4.63636C11.536 4.01818 10.7622 3.70909 9.80019 3.70909C8.72104 3.70909 7.88031 4.15758 7.27799 5.05455V5.07879H7.26544L7.27799 5.05455V3.90303H4.49228C4.509 4.16161 4.51737 4.96565 4.51737 6.31515C4.51737 7.66464 4.509 9.55959 4.49228 12Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+
                         <h3 class="footer__heading">Subscribe</h3>
+
                         <p class="footer__desc">
-                            Get GreenWish updates, volunteer opportunities, and
-                            recovery stories from the community.
+                            Subscribe to get GreenWish updates, volunteer news,
+                            and community recovery stories.
+                        
                         </p>
 
                         <form class="footer-form" action="">
@@ -471,36 +490,31 @@
                             </button>
                         </form>
 
-                        <div class="subscribe-popup" id="subscribePopup">
-                            <div class="subscribe-popup__overlay"></div>
-                            <div class="subscribe-popup__box">
-                                <h3 class="subscribe-popup__title">
-                                    Thank you
-                                </h3>
-                                <p class="subscribe-popup__text">
-                                    We will keep you updated on the next
-                                    GreenWish activity.
-                                </p>
-                                <button
-                                    class="subscribe-popup__btn"
-                                    id="closePopup"
-                                >
-                                    Close
-                                </button>
-                            </div>
+                                            <div class="subscribe-popup" id="subscribePopup">
+                        <div class="subscribe-popup__overlay"></div>
+                        <div class="subscribe-popup__box">
+                            <h3 class="subscribe-popup__title">Thank you</h3>
+                            <p class="subscribe-popup__text">
+                                We will inform you about the next GreenWish event.
+                            </p>
+                            <button class="subscribe-popup__btn" id="closePopup">Close</button>
                         </div>
+                    </div>
+
+                    <script src="./assets/js/popup.js"></script>
                     </div>
                 </div>
 
                 <div class="footer__copyright">
                     <p class="footer__copyright-text">
-                        2026 GreenWish. All rights reserved.
+                        2026 GDN. Copyright and All rights reserved.
                     </p>
                 </div>
             </div>
         </footer>
 
         <script src="./assets/js/popup.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="./assets/js/activities-chart.js"></script>
     </body>
 </html>

@@ -400,7 +400,20 @@ const charityGame = (() => {
         return Math.min(Math.max(value, min), max);
     }
 
+    function isEditableTarget(target) {
+        if (!(target instanceof HTMLElement)) return false;
+
+        return (
+            target.isContentEditable ||
+            ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName)
+        );
+    }
+
     function handleKeyChange(event, isPressed) {
+        if (isEditableTarget(event.target)) {
+            return;
+        }
+
         const key = event.key.toLowerCase();
 
         if (

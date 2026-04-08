@@ -9,6 +9,7 @@
     min-height: calc(100vh - 90px);
     gap: 54px;
     padding: 40px 0 90px;
+    display: flex;
 }
 
 .activities-hero__content {
@@ -28,10 +29,17 @@
 .activities-hero__desc {
     max-width: 610px;
     color: #d4e7da;
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
 
 .activities-hero__row {
     gap: 24px;
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
 }
 
 .activities-hero__secondary {
@@ -272,331 +280,20 @@
     overflow: visible;
 }
 
-.impact-chart__topbar {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 18px;
-    margin-bottom: 18px;
-}
-
-.impact-chart__legend {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 14px;
-    border-radius: 999px;
-    background: var(--green-50);
-}
-
-.impact-chart__legend-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--green-600);
-    box-shadow: 0 0 0 4px rgba(111, 185, 135, 0.2);
-}
-
-.impact-chart__legend-text {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--text-dark);
-}
-
-.impact-chart__callout {
-    min-width: 180px;
-    padding: 16px 18px;
-    border: 1px solid rgba(111, 185, 135, 0.18);
-    border-radius: 22px;
-    background: linear-gradient(180deg, #fbfefb 0%, #f1f8f2 100%);
-    box-shadow: 0 12px 30px rgba(79, 143, 102, 0.1);
-}
-
-.impact-chart__callout-label,
-.impact-chart__tooltip-month {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #6f8b77;
-}
-
-.impact-chart__callout-value {
-    display: block;
-    margin-top: 8px;
-    font-family: poppins, sans-serif;
-    font-size: 3.2rem;
-    font-weight: 600;
-    line-height: 1;
-    color: var(--green-700);
-}
-
-.impact-chart__callout-text {
-    display: block;
-    margin-top: 8px;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: var(--text-soft);
-}
-
 .impact-chart__stage {
     position: relative;
-    padding: 16px 10px 10px;
-    border: 1px solid rgba(111, 185, 135, 0.14);
-    border-radius: 26px;
-    background: linear-gradient(180deg, #fbfefb 0%, #f2faf3 100%);
-    overflow: visible;
+    padding: 28px 26px 18px;
+    border-radius: 20px;
+    background: var(--green-700);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    overflow: hidden;
 }
 
-.impact-chart__stage::before,
-.impact-chart__stage::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.impact-chart__stage::before {
-    top: -70px;
-    right: -40px;
-    width: 200px;
-    height: 200px;
-    background: rgba(147, 207, 161, 0.14);
-    filter: blur(6px);
-}
-
-.impact-chart__stage::after {
-    left: -40px;
-    bottom: -80px;
-    width: 180px;
-    height: 180px;
-    background: rgba(59, 107, 77, 0.08);
-    filter: blur(10px);
-}
-
-.impact-chart__svg {
-    position: relative;
-    z-index: 1;
+.impact-chart__canvas {
+    display: block;
     width: 100%;
     height: auto;
-}
-
-.impact-chart__grid {
-    stroke: #dceadf;
-    stroke-width: 1.5;
-    stroke-dasharray: 4 8;
-}
-
-.impact-chart__vertical-guide {
-    stroke: rgba(59, 107, 77, 0.1);
-    stroke-width: 1.5;
-    stroke-dasharray: 4 10;
-}
-
-.impact-chart__axis {
-    stroke: #a8bea9;
-    stroke-width: 2;
-}
-
-.impact-chart__axis-label,
-.impact-chart__month-label {
-    font-family: "montserrat", sans-serif;
-    font-size: 14px;
-    fill: #7a8b7e;
-}
-
-.impact-chart__value-label {
-    font-family: poppins, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    fill: var(--green-700);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.impact-chart__value-label.is-visible {
-    opacity: 1;
-}
-
-.impact-chart__area {
-    opacity: 0.9;
-}
-
-.impact-chart__line-glow {
-    fill: none;
-    stroke: rgba(111, 185, 135, 0.34);
-    stroke-width: 16;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.impact-chart__line {
-    fill: none;
-    stroke-width: 5.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.impact-chart__traveler {
-    fill: #7bc790;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.impact-chart__point-group {
-    cursor: pointer;
-    outline: none;
-}
-
-.impact-chart__point-group:focus-visible .impact-chart__point-ring,
-.impact-chart__point-group:focus-visible .impact-chart__point-core,
-.impact-chart__point-group.is-active .impact-chart__point-ring,
-.impact-chart__point-group.is-active .impact-chart__point-core {
-    opacity: 1;
-}
-
-.impact-chart__point-hit {
-    fill: transparent;
-}
-
-.impact-chart__drop-line,
-.impact-chart__point-ring,
-.impact-chart__point-core {
-    opacity: 0;
-    transform-box: fill-box;
-    transform-origin: center;
-    transform: scale(0.55);
-    transition:
-        transform 0.42s cubic-bezier(0.2, 0.8, 0.2, 1),
-        opacity 0.32s ease;
-}
-
-.impact-chart__drop-line {
-    stroke: rgba(59, 107, 77, 0.14);
-    stroke-width: 1.5;
-    stroke-dasharray: 4 8;
-}
-
-.impact-chart__point-ring {
-    fill: rgba(111, 185, 135, 0.2);
-    stroke: rgba(59, 107, 77, 0.16);
-    stroke-width: 2;
-}
-
-.impact-chart__point-core {
-    fill: var(--white);
-    stroke: var(--green-700);
-    stroke-width: 4;
-}
-
-.impact-chart__point-group.is-visible .impact-chart__drop-line,
-.impact-chart__point-group.is-visible .impact-chart__point-ring,
-.impact-chart__point-group.is-visible .impact-chart__point-core {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.impact-chart__point-group.is-active .impact-chart__point-ring {
-    animation: impactPulse 1.8s ease-in-out infinite;
-}
-
-.impact-chart__tooltip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    min-width: 190px;
-    padding: 14px 16px;
-    border: 1px solid rgba(111, 185, 135, 0.16);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.96);
-    box-shadow: 0 20px 50px rgba(35, 79, 49, 0.16);
-    backdrop-filter: blur(12px);
-    opacity: 0;
-    visibility: hidden;
-    transform: translate(-50%, calc(-100% - 18px)) scale(0.92);
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease,
-        visibility 0.25s ease;
-    pointer-events: none;
-}
-
-.impact-chart__tooltip::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    width: 16px;
-    height: 16px;
-    border-right: 1px solid rgba(111, 185, 135, 0.16);
-    border-bottom: 1px solid rgba(111, 185, 135, 0.16);
-    background: rgba(255, 255, 255, 0.96);
-    transform: translateX(-50%) rotate(45deg);
-}
-
-.impact-chart__tooltip.is-visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%, calc(-100% - 18px)) scale(1);
-}
-
-.impact-chart__tooltip-value {
-    display: block;
-    margin-top: 8px;
-    font-family: poppins, sans-serif;
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: var(--green-700);
-}
-
-.impact-chart__tooltip-trend {
-    display: block;
-    margin-top: 6px;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: var(--text-soft);
-}
-
-.impact-chart__summary {
-    display: flex;
-    gap: 16px;
-    margin-top: 18px;
-}
-
-.impact-chart__summary-item {
-    flex: 1;
-    padding: 18px 20px;
-    border-radius: 18px;
-    background: var(--green-50);
-}
-
-.impact-chart__summary-item strong {
-    display: block;
-    font-size: 2.4rem;
-    font-weight: 600;
-    color: var(--green-700);
-}
-
-.impact-chart__summary-item span {
-    display: block;
-    margin-top: 8px;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: var(--text-soft);
-}
-
-@keyframes impactPulse {
-    0%,
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.22);
-        opacity: 0.58;
-    }
+    aspect-ratio: 560 / 340;
 }
 
 /* CTA */
@@ -754,12 +451,7 @@
     }
 
     .impact-chart__stage {
-        padding: 10px 0 4px;
-    }
-
-    .impact-chart__tooltip {
-        min-width: 160px;
-        padding: 12px 14px;
+        padding: 22px 16px 14px;
     }
 
     .activities-cta__heading {

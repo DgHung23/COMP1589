@@ -283,3 +283,77 @@
     line-height: 1.86;
     color: var(--text-soft);
 }
+
+@media (max-width: 991.98px) {
+    .story,
+    .values,
+    .impact,
+    .team {
+        padding: 70px 0;
+    }
+
+    .story__inner,
+    .impact__inner {
+        flex-direction: column;
+    }
+
+    .story__inner {
+        gap: 36px;
+    }
+
+    .story__media,
+    .story__content,
+    .impact__content,
+    .impact-panel {
+        width: 100%;
+    }
+
+    .story__img {
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .values__list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .team__list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .story,
+    .values,
+    .impact,
+    .team {
+        padding: 55px 0;
+    }
+
+    .story__stats,
+    .values__list,
+    .impact__list,
+    .team__list {
+        grid-template-columns: 1fr;
+    }
+
+    .story-stat,
+    .values-card,
+    .impact-panel,
+    .impact-item {
+        padding: 24px;
+    }
+
+    .impact-panel__heading {
+        font-size: 2.6rem;
+    }
+
+    .team-item__thumb {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+}

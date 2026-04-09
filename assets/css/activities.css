@@ -458,3 +458,84 @@
         font-size: 3rem;
     }
 }
+
+@media (max-width: 991.98px) {
+    .activities-hero__layout {
+        min-height: auto;
+        gap: 38px;
+        padding: 36px 0 80px;
+    }
+
+    .activities-hero__images {
+        max-width: 660px;
+        margin: 0 auto;
+    }
+
+    .activities-hero__image--large {
+        width: min(100%, 430px);
+        height: auto;
+        aspect-ratio: 430 / 530;
+    }
+
+    .activities-hero__image--small {
+        width: min(38vw, 240px);
+        height: auto;
+        aspect-ratio: 240 / 300;
+    }
+
+    .activities-hero__badge {
+        right: 0;
+    }
+
+    .mission,
+    .impact {
+        padding: 90px 0;
+    }
+
+    .activities-cta {
+        padding: 90px 0 110px;
+    }
+
+    .impact-chart {
+        width: 100%;
+    }
+
+    .activities-cta__content {
+        max-width: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .activities-hero__row {
+        gap: 16px;
+    }
+
+    .activities-hero__metrics {
+        flex-direction: column;
+    }
+
+    .activities-hero__number,
+    .impact__stat {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .mission,
+    .impact {
+        padding: 70px 0;
+    }
+
+    .activities-cta {
+        padding: 80px 0 90px;
+    }
+
+    .activities-cta__actions {
+        align-items: stretch;
+    }
+
+    .activities-cta__btn {
+        width: 100%;
+        min-width: 0;
+        text-align: center;
+    }
+}

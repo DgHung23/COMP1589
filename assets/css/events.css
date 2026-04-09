@@ -458,3 +458,123 @@
 .event-cta__link:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 991.98px) {
+    .event-intro {
+        padding: 90px 0 70px;
+    }
+
+    .event-list {
+        padding: 90px 0 110px;
+    }
+
+    .game-charity {
+        padding: 90px 0;
+    }
+
+    .event-intro__inner,
+    .event-list__top,
+    .event-cta__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .event-intro__content,
+    .event-intro__stats {
+        width: 100%;
+    }
+
+    .event-intro__stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .event-list__tags {
+        justify-content: flex-start;
+        max-width: none;
+    }
+
+    .game-charity__frame {
+        padding: 24px;
+    }
+
+    .charity-game__panel {
+        padding: 32px;
+    }
+
+    .event-cta__content {
+        max-width: none;
+    }
+
+    .event-cta__actions {
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .event-intro {
+        padding: 70px 0 60px;
+    }
+
+    .event-list {
+        padding: 70px 0 80px;
+    }
+
+    .game-charity {
+        padding: 70px 0;
+    }
+
+    .event-cta {
+        padding-bottom: 80px;
+    }
+
+    .event-intro__stats,
+    .event-list__grid,
+    .charity-game__result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card,
+    .game-charity__frame,
+    .charity-game__panel,
+    .event-cta__inner {
+        padding: 24px 20px;
+    }
+
+    .game-charity__placeholder {
+        min-height: 320px;
+        padding: 24px 16px;
+    }
+
+    .game-charity__title,
+    .charity-game__panel-title,
+    .event-cta__heading {
+        font-size: 2.8rem;
+    }
+
+    .charity-game__hud,
+    .charity-game__actions {
+        flex-direction: column;
+    }
+
+    .charity-game__stat,
+    .charity-game__invite-link,
+    .charity-game__secondary-btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .charity-game__overlay,
+    .charity-game__result {
+        padding: 16px;
+    }
+
+    .event-cta__actions {
+        align-items: stretch;
+    }
+
+    .event-cta .btn {
+        width: 100%;
+        min-width: 0;
+    }
+}

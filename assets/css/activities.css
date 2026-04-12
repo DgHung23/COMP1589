@@ -6,7 +6,7 @@
 }
 
 .activities-hero__layout {
-    min-height: calc(100vh - 90px);
+    min-height: 91vh;
     gap: 54px;
     padding: 40px 0 90px;
     display: flex;
@@ -429,14 +429,14 @@
 
     .activities-hero__image--large,
     .activities-hero__image--small {
-        position: static;
+        right: 80px;
         width: 100%;
         height: auto;
     }
 
     .activities-hero__badge {
-        position: static;
-        width: 100%;
+        left: 100;
+        width: 50%;
         margin-top: 20px;
     }
 

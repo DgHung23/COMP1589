@@ -310,7 +310,7 @@
 
     .story__img {
         height: auto;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 2 / 1;
     }
 
     .values__list {
@@ -334,8 +334,7 @@
 
     .story__stats,
     .values__list,
-    .impact__list,
-    .team__list {
+    .impact__list {
         grid-template-columns: 1fr;
     }
 
@@ -348,6 +347,10 @@
 
     .impact-panel__heading {
         font-size: 2.6rem;
+    }
+
+    .team-item {
+        width: 45vw;
     }
 
     .team-item__thumb {

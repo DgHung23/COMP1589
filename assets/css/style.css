@@ -6,7 +6,7 @@
 .hero--flex {
     display: flex;
     align-items: center;
-    min-height: 90vh;
+    min-height: 91vh;
 }
 
 .hero__content {
@@ -367,7 +367,6 @@
     }
 
     .hero--flex {
-        min-height: auto;
         gap: 40px;
         padding: 30px 0 70px;
     }
@@ -479,21 +478,12 @@
         margin-left: 0;
     }
 
-    .hero__images {
-        gap: 14px;
-    }
-
     .hero__img {
         width: min(54vw, 200px);
     }
 
     .hero__img:last-child {
         width: min(30vw, 110px);
-    }
-
-    .hero__img--second,
-    .hero__img:first-child {
-        margin: 0;
     }
 
     .sponsor__slider::before,

@@ -1,3 +1,5 @@
+// =================================Pop up for email Subscription=========================
+
 const footerForm = document.querySelector(".footer-form");
 const emailInput = document.querySelector(".footer-form__input");
 const popup = document.getElementById("subscribePopup");
@@ -26,6 +28,87 @@ if (footerForm && emailInput && popup && closePopup && popupOverlay) {
     });
 }
 
+// ============================= Pop up for Event Registration =========================
+
+const eventRegisterTriggers = document.querySelectorAll(
+    "[data-event-register-trigger]",
+);
+const eventRegisterPopup = document.getElementById("eventRegisterPopup");
+const eventRegisterOverlay = eventRegisterPopup?.querySelector(
+    ".subscribe-popup__overlay",
+);
+const eventRegisterClose = document.getElementById("eventRegisterClose");
+const eventRegisterDone = document.getElementById("eventRegisterDone");
+const eventRegisterForm = document.getElementById("eventRegisterForm");
+const eventRegisterEmail = document.getElementById("eventRegisterEmail");
+const eventRegisterFormView = document.getElementById("eventRegisterFormView");
+const eventRegisterSuccess = document.getElementById("eventRegisterSuccess");
+
+if (
+    eventRegisterTriggers.length > 0 &&
+    eventRegisterPopup &&
+    eventRegisterOverlay &&
+    eventRegisterClose &&
+    eventRegisterDone &&
+    eventRegisterForm &&
+    eventRegisterEmail &&
+    eventRegisterFormView &&
+    eventRegisterSuccess
+) {
+    const resetEventRegisterPopup = function () {
+        eventRegisterForm.reset();
+        eventRegisterFormView.hidden = false;
+        eventRegisterSuccess.hidden = true;
+    };
+
+    const openEventRegisterPopup = function () {
+        resetEventRegisterPopup();
+        eventRegisterPopup.classList.add("subscribe-popup--show");
+        eventRegisterPopup.setAttribute("aria-hidden", "false");
+        eventRegisterEmail.focus();
+    };
+
+    const closeEventRegisterPopup = function () {
+        eventRegisterPopup.classList.remove("subscribe-popup--show");
+        eventRegisterPopup.setAttribute("aria-hidden", "true");
+        resetEventRegisterPopup();
+    };
+
+    eventRegisterTriggers.forEach(function (trigger) {
+        trigger.addEventListener("click", function (event) {
+            event.preventDefault();
+            openEventRegisterPopup();
+        });
+    });
+
+    eventRegisterForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!eventRegisterForm.checkValidity()) {
+            eventRegisterForm.reportValidity();
+            return;
+        }
+
+        eventRegisterForm.reset();
+        eventRegisterFormView.hidden = true;
+        eventRegisterSuccess.hidden = false;
+    });
+
+    eventRegisterClose.addEventListener("click", closeEventRegisterPopup);
+    eventRegisterDone.addEventListener("click", closeEventRegisterPopup);
+    eventRegisterOverlay.addEventListener("click", closeEventRegisterPopup);
+
+    window.addEventListener("keydown", function (event) {
+        if (
+            event.key === "Escape" &&
+            eventRegisterPopup.classList.contains("subscribe-popup--show")
+        ) {
+            closeEventRegisterPopup();
+        }
+    });
+}
+
+// ============Pop up for Mobile Navigation=========================
 const header = document.querySelector(".header");
 const headerTop = document.querySelector(".header-top");
 const navbar = document.querySelector(".navbar");

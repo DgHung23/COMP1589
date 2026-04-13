@@ -172,7 +172,7 @@
                                     >12 May 2026</span
                                 >
                                 <span class="event-card__meta-item"
-                                    >Ben Tre</span
+                                    >Ho Chi Minh City</span
                                 >
                                 <span class="event-card__meta-item"
                                     >08:00 AM</span
@@ -191,9 +191,13 @@
                                 <span class="event-card__tag">Outdoor</span>
                             </div>
 
-                            <a href="#!" class="event-card__link"
-                                >Join this event</a
+                            <a
+                                href="#!"
+                                class="event-card__link"
+                                data-event-register-trigger
                             >
+                                Save your spot
+                            </a>
                         </article>
 
                         <article class="event-card">
@@ -230,9 +234,13 @@
                                 >
                             </div>
 
-                            <a href="#!" class="event-card__link"
-                                >Save your spot</a
+                            <a
+                                href="#!"
+                                class="event-card__link"
+                                data-event-register-trigger
                             >
+                                Save your spot
+                            </a>
                         </article>
 
                         <article class="event-card">
@@ -265,7 +273,13 @@
                                 <span class="event-card__tag">Community</span>
                             </div>
 
-                            <a href="#!" class="event-card__link">Learn more</a>
+                            <a
+                                href="#!"
+                                class="event-card__link"
+                                data-event-register-trigger
+                            >
+                                Save your spot
+                            </a>
                         </article>
 
                         <article class="event-card">
@@ -298,9 +312,13 @@
                                 <span class="event-card__tag">Impact</span>
                             </div>
 
-                            <a href="#!" class="event-card__link"
-                                >Support now</a
+                            <a
+                                href="#!"
+                                class="event-card__link"
+                                data-event-register-trigger
                             >
+                                Join this event
+                            </a>
                         </article>
                     </div>
                 </div>
@@ -378,7 +396,7 @@
                                     </h3>
                                     <p class="charity-game__panel-desc">
                                         Move with <strong>Arrow keys</strong> or
-                                        <strong>WASD</strong>. Survive as long
+                                        <strong>WASD</strong> (game require keyboard to play). Survive as long
                                         as possible. If the turtle hits garbage,
                                         the run ends. Reach the full 5 minutes
                                         to generate the maximum
@@ -491,28 +509,96 @@
             </section>
 
             <!-- CTA -->
-            <section class="event-cta">
+            <section class="event-cta"><!-- Semantic section for the event call-to-action area, helping define page structure for SEO -->
                 <div class="container"> <!-- put container help limit max width to 1200px -->
-                    <div class="event-cta__inner">
-                        <div class="event-cta__content">
-                            <h2 class="event-cta__heading">
+                    <div class="event-cta__inner"> <!-- BEM block wrapper used to group and display the content and action elements in a row -->
+                        <div class="event-cta__content"> <!-- Content area for the main heading and supporting description -->
+                            <h2 class="event-cta__heading"> <!-- Section heading describing the main purpose of this CTA block -->
                                 Be part of the GreenWish recovery community.
                             </h2>
-                            <p class="event-cta__desc">
+                            <p class="event-cta__desc"> <!-- Short paragraph that encourages users to take part in the project -->
                                 Volunteer, donate, or share the next event with
                                 your friends and help create a greener tomorrow.
                             </p>
                         </div>
-                        <div class="event-cta__actions">
-                            <a href="./events.html#event-list" class="btn">Volunteer now</a>
-                            <a href="./contact.html#hq" class="event-cta__link"
-                                >Contact GreenWish</a
-                            >
+                        <div class="event-cta__actions"> <!-- Action area containing primary and secondary navigation links -->
+                            <a href="./events.html#event-list" class="btn">Volunteer now</a> <!-- Primary CTA button link-->
+                            <a href="./contact.html#hq" class="event-cta__link">Contact GreenWish</a> <!-- Secondary text link-->
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+
+        <div
+            class="subscribe-popup event-register-popup"
+            id="eventRegisterPopup"
+            aria-hidden="true"
+        >
+            <div class="subscribe-popup__overlay"></div>
+            <div
+                class="subscribe-popup__box event-register-popup__box"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="eventRegisterTitle"
+            >
+                <button
+                    type="button"
+                    class="event-register-popup__close"
+                    id="eventRegisterClose"
+                    aria-label="Close event registration"
+                >
+                    &times;
+                </button>
+
+                <div id="eventRegisterFormView">
+                    <h3 class="subscribe-popup__title" id="eventRegisterTitle">
+                        Save your spot
+                    </h3>
+                    <p class="subscribe-popup__text">
+                        Enter your email to register for this GreenWish event.
+                    </p>
+
+                    <form class="event-register-form" id="eventRegisterForm">
+                        <label
+                            class="event-register-form__label"
+                            for="eventRegisterEmail"
+                        >
+                            Email address
+                        </label>
+                        <input
+                            class="event-register-form__input"
+                            type="email"
+                            name="event-email"
+                            id="eventRegisterEmail"
+                            placeholder="Enter your email..."
+                            required
+                        />
+                        <button
+                            class="btn event-register-form__submit"
+                            type="submit"
+                        >
+                            Submit
+                        </button>
+                    </form>
+                </div>
+
+                <div class="event-register-popup__success" id="eventRegisterSuccess" hidden>
+                    <h3 class="subscribe-popup__title">Thank you</h3>
+                    <p class="subscribe-popup__text">
+                        Thank for register, we will provide event detail in your
+                        email.
+                    </p>
+                    <button
+                        class="subscribe-popup__btn"
+                        type="button"
+                        id="eventRegisterDone"
+                    >
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">

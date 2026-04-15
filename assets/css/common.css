@@ -100,7 +100,7 @@ button {
 
 /* Header - nav bar */
 .header {
-    max-height: 9vh;
+    min-height: 9vh;
     padding-top: 15px;
     background: var(--header-bg);
 }
